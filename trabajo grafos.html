@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Autómatas Celulares, Matemática y Música</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.39/Tone.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Autómatas Celulares, Matemática y Música</h1>
+
+  <div class="controls">
+    <label>Regla (0-255):</label>
+    <input type="number" id="ruleInput" value="30" min="0" max="255" />
+    <button onclick="resetAutomaton()">Reiniciar</button>
+    <button onclick="playMusic()">Generar Música</button>
+    <button onclick="loadExample(30)">Ejemplo Regla 30</button>
+    <button onclick="loadExample(90)">Ejemplo Regla 90</button>
+    <button onclick="loadExample(110)">Ejemplo Regla 110</button>
+  </div>
+
+  <main>
+    <script src="sketch.js"></script>
+  </main>
+
+  <footer>
+    <p>Creado por [Tu Nombre]. Proyecto Autómatas Celulares, Matemática y Música.</p>
+  </footer>
+</body>
+</html>
